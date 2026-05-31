@@ -1,1 +1,20 @@
-/* Add CSS Styling */
+.pinkbackground{
+    background-color: rgb(224, 122, 139);
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+#secondDiv{
+    color: blue;
+    font-size: 36px;
+}
+
+
+.fourthelement{
+    background-color: rgb(39, 145, 39);
+    font-size:24px;
+    font-style:bold;
+}
+
+.number3{
+    font-size: 25px;
+}
