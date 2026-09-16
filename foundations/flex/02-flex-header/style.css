@@ -1,6 +1,10 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -9,11 +13,22 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+
+  /* this is making the space on the logo from the top and bottom*/
+  margin: 15px;
+
 }
 
 ul {
   /* this removes the dots on the list items*/
-  list-style-type: none;
+    list-style-type: none;
+    display: flex ;
+  /* this removes default margin and padding and makes the UL elements move from left and right side from the end*/
+    margin: 0;
+    padding: 0 15px;
+
+  /* this makes space beetween elements one two three*/  
+    gap: 10px;
 }
 
 a {
@@ -23,3 +38,4 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+
