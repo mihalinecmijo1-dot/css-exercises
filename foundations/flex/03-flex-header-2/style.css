@@ -13,7 +13,23 @@ body {
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
   display: flex;
+  flex-direction: row;
+  /* This is putting logo and list go left and notifications to the right*/
+  justify-content: space-between;
+  align-items: center;
+
+  }
+
+.LeftSide {
+  display: flex;
+  flex-direction: row;
 }
+
+.RightSide {
+  display: flex;
+  flex-direction: row;
+}
+
 
 .profile-image {
   background: rebeccapurple;
@@ -46,4 +62,11 @@ a {
 
 ul {
   list-style-type: none;
+  /* this puts childer elemnts in horizontal row*/
+  display: flex;
+  justify-content:space-between;
+
+  /* this makes childer elements space beetween them*/
+  gap: 20px;
 }
+
