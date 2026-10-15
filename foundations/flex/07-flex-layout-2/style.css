@@ -8,19 +8,43 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  /*This changes the text size,weight and it centers it vertically*/
+  font-size: 32px;
+  font-weight: 900; 
+  display: flex;
+  align-items: center;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  /*This makes footer and it's content centered*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  /*This makes right padding size in sidebar*/
+  padding: 16px;
 }
+
+  /*This removes dot from the ul list*/
+ul{
+  list-style: none;
+}
+
+  /*This makes links white and right size*/
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+  
 
 .card {
   border: 1px solid #eee;
