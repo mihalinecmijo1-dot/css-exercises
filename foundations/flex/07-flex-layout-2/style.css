@@ -2,7 +2,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .header {
   height: 72px;
@@ -13,6 +16,14 @@ body {
   font-weight: 900; 
   display: flex;
   align-items: center;
+  padding-left: 16px;
+}
+
+.content{
+  /*This makes content (sidebar and square text positioned in the row, and maxed it take space from header to footer*/
+  display: flex;
+  flex-direction: row;
+  flex: 1;
 }
 
 .footer {
@@ -23,6 +34,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: auto;
 }
 
 .sidebar {
@@ -31,11 +43,18 @@ body {
   box-sizing: border-box;
   /*This makes right padding size in sidebar*/
   padding: 16px;
+  justify-content: flex-start;
+  /* This prevents the sidebar from shrinking */
+  flex-shrink: 0;
 }
 
-  /*This removes dot from the ul list*/
+
 ul{
+  /*This removes dot from the ul list*/
   list-style: none;
+  /*This removes margin and padding*/
+  margin: 0;
+  padding: 0;
 }
 
   /*This makes links white and right size*/
@@ -50,4 +69,15 @@ a{
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+
+  /*This makes size of card container*/
+  width: 250px;
+  padding: 16px;
+}
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 32px;
 }
